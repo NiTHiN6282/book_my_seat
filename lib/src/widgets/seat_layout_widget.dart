@@ -18,6 +18,7 @@ class SeatLayoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InteractiveViewer(
+      scaleEnabled: false,
       maxScale: 5,
       minScale: 0.8,
       boundaryMargin: const EdgeInsets.all(8),

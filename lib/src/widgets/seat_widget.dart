@@ -33,6 +33,9 @@ class _SeatWidgetState extends State<SeatWidget> {
 
   @override
   Widget build(BuildContext context) {
+    seatState = widget.model.seatState;
+    rowI = widget.model.rowI;
+    colI = widget.model.colI;
     final safeCheckedSeatState = seatState;
     if (safeCheckedSeatState != null) {
       return GestureDetector(
